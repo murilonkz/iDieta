@@ -1,5 +1,5 @@
 //
-//  Diet_VC.h
+//  Diets_Cell.h
 //  iDieta
 //
 //  Created by Rafael Duarte on 15/12/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Diet_VC : UIViewController
+@interface Diets_Cell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UITableViewCell *cell;
 
 @end

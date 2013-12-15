@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Meal.h"
+
 
 @interface Item : NSObject
+@property(nonatomic)BOOL *popUp;
+@property(strong,nonatomic)NSDate *alarm;
+@property(strong,nonatomic)Meal *meal;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  TabBar.h
+//  Lunchbox_ViewController.h
 //  iDieta
 //
 //  Created by Rafael Duarte on 15/12/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabBar : UITabBarController
+@interface Lunchbox_ViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UIView *view;
 
 @end
