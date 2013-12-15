@@ -21,23 +21,7 @@
     static Item *sharedItem=nil;
     if (!sharedItem){
         sharedItem = [[super alloc] init];
-        
-        if (arc4random()%2==1) {
-            [sharedItem setPopUp:NO];
-        }else{
-            [sharedItem setPopUp:YES];
-        };
-        
         [sharedItem setAlarm:[[NSDate alloc]initWithTimeIntervalSinceNow:arc4random()%24*60*60*7]];
-        
-        
-        if (arc4random()%2==1) {
-            [sharedItem setPopUp:NO];
-        }else{
-            [sharedItem setPopUp:YES];
-        };
-        
-    
     }
     return sharedItem;
 };

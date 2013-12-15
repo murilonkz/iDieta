@@ -7,6 +7,7 @@
 //
 
 #import "Diet.h"
+#import "Item.h"
 
 @interface Diet ()
 {
@@ -16,5 +17,17 @@
 
 
 @implementation Diet
+@synthesize itens;
+
++(Diet*)sharedDiet{
+    static Diet *sharedDiet=nil;
+    if (!sharedDiet){
+        sharedDiet = [[super alloc] init];
+        [sharedDiet setItens:[[NSMutableArray alloc]initWithObjects:[Item.sharedDiet], nil]];
+    }
+    return sharedDiet;
+};
+
+
 
 @end

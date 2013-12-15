@@ -15,4 +15,5 @@
 @property(strong,nonatomic)NSDate *alarm;
 @property(strong,nonatomic)Meal *meal;
 
++(Item*)sharedItem;
 @end

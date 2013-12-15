@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Meal : NSObject
+@property(nonatomic)float qtdde;
 @property (strong,nonatomic)NSString *name;
-@property(nonatomic)float *cal;
+@property(nonatomic)float cal;
+
++(Meal*)sharedMeal;
 
 @end

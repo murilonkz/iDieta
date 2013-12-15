@@ -30,23 +30,26 @@
     if (!sharedMeal){
         sharedMeal = [[super alloc] init];
         
-        if (arc4random()%2==1) {
+        switch (arc4random()%3) {
+            case 1:
+                [sharedMeal setQtdde:2];
+                break;
+            case 2:
+                [sharedMeal setQtdde:3.5];
+                break;
+            default:
+                [sharedMeal setQtdde:5];
+                break;
+        }
+        
+        if((arc4random()%2)==1) {
             [sharedMeal setName:@"Banana"];
         }else{
             [sharedMeal setName:@"Maça"];
         };
         
-        
-        
+        float x =arc4random()%500;
         [sharedMeal setCal:x];
-        
-        
-        if (arc4random()%2==1) {
-            [sharedMeal setPopUp:NO];
-        }else{
-            [sharedMeal setPopUp:YES];
-        };
-        
         
     }
     return sharedMeal;
