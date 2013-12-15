@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7C8743185E19FC0031208E /* Daily_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C8736185E19FC0031208E /* Daily_VC.m */; };
+		5F7C8744185E19FC0031208E /* Daily_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C8737185E19FC0031208E /* Daily_VC.xib */; };
+		5F7C8745185E19FC0031208E /* Diet_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C8739185E19FC0031208E /* Diet_VC.m */; };
+		5F7C8746185E19FC0031208E /* Diet_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C873A185E19FC0031208E /* Diet_VC.xib */; };
+		5F7C8747185E19FC0031208E /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C873C185E19FC0031208E /* Item.m */; };
+		5F7C8748185E19FC0031208E /* ShopList_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C873E185E19FC0031208E /* ShopList_VC.m */; };
+		5F7C8749185E19FC0031208E /* ShopList_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C873F185E19FC0031208E /* ShopList_VC.xib */; };
+		5F7C874A185E19FC0031208E /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C8741185E19FC0031208E /* TabBar.m */; };
+		5F7C874B185E19FC0031208E /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C8742185E19FC0031208E /* TabBar.xib */; };
 		EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35441853AB49001106A2 /* Foundation.framework */; };
 		EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35461853AB49001106A2 /* CoreGraphics.framework */; };
 		EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
@@ -32,6 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F7C8735185E19FC0031208E /* Daily_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Daily_VC.h; sourceTree = "<group>"; };
+		5F7C8736185E19FC0031208E /* Daily_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Daily_VC.m; sourceTree = "<group>"; };
+		5F7C8737185E19FC0031208E /* Daily_VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Daily_VC.xib; sourceTree = "<group>"; };
+		5F7C8738185E19FC0031208E /* Diet_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet_VC.h; sourceTree = "<group>"; };
+		5F7C8739185E19FC0031208E /* Diet_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet_VC.m; sourceTree = "<group>"; };
+		5F7C873A185E19FC0031208E /* Diet_VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diet_VC.xib; sourceTree = "<group>"; };
+		5F7C873B185E19FC0031208E /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5F7C873C185E19FC0031208E /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5F7C873D185E19FC0031208E /* ShopList_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopList_VC.h; sourceTree = "<group>"; };
+		5F7C873E185E19FC0031208E /* ShopList_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopList_VC.m; sourceTree = "<group>"; };
+		5F7C873F185E19FC0031208E /* ShopList_VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopList_VC.xib; sourceTree = "<group>"; };
+		5F7C8740185E19FC0031208E /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
+		5F7C8741185E19FC0031208E /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
+		5F7C8742185E19FC0031208E /* TabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
 		EBAC35411853AB49001106A2 /* iDieta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDieta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAC35441853AB49001106A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBAC35461853AB49001106A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +100,20 @@
 		EBAC35381853AB49001106A2 = {
 			isa = PBXGroup;
 			children = (
+				5F7C8735185E19FC0031208E /* Daily_VC.h */,
+				5F7C8736185E19FC0031208E /* Daily_VC.m */,
+				5F7C8737185E19FC0031208E /* Daily_VC.xib */,
+				5F7C8738185E19FC0031208E /* Diet_VC.h */,
+				5F7C8739185E19FC0031208E /* Diet_VC.m */,
+				5F7C873A185E19FC0031208E /* Diet_VC.xib */,
+				5F7C873B185E19FC0031208E /* Item.h */,
+				5F7C873C185E19FC0031208E /* Item.m */,
+				5F7C873D185E19FC0031208E /* ShopList_VC.h */,
+				5F7C873E185E19FC0031208E /* ShopList_VC.m */,
+				5F7C873F185E19FC0031208E /* ShopList_VC.xib */,
+				5F7C8740185E19FC0031208E /* TabBar.h */,
+				5F7C8741185E19FC0031208E /* TabBar.m */,
+				5F7C8742185E19FC0031208E /* TabBar.xib */,
 				EBAC354A1853AB49001106A2 /* iDieta */,
 				EBAC35631853AB49001106A2 /* iDietaTests */,
 				EBAC35431853AB49001106A2 /* Frameworks */,
@@ -219,8 +256,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7C8744185E19FC0031208E /* Daily_VC.xib in Resources */,
+				5F7C8749185E19FC0031208E /* ShopList_VC.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
+				5F7C8746185E19FC0031208E /* Diet_VC.xib in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
+				5F7C874B185E19FC0031208E /* TabBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7C8747185E19FC0031208E /* Item.m in Sources */,
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
 				EBAC35511853AB49001106A2 /* main.m in Sources */,
+				5F7C8745185E19FC0031208E /* Diet_VC.m in Sources */,
+				5F7C874A185E19FC0031208E /* TabBar.m in Sources */,
+				5F7C8748185E19FC0031208E /* ShopList_VC.m in Sources */,
+				5F7C8743185E19FC0031208E /* Daily_VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +487,7 @@
 				EBAC356F1853AB49001106A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBAC35701853AB49001106A2 /* Build configuration list for PBXNativeTarget "iDietaTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +496,7 @@
 				EBAC35721853AB49001106A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
