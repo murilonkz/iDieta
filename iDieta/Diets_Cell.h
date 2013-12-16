@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface Diets_Cell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (nonatomic)int pk;
+
+-(void)setPk:(int)pk;
 
 @end

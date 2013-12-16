@@ -9,6 +9,8 @@
 #import "Diets_Cell.h"
 
 @implementation Diets_Cell
+@synthesize button=_button;
+@synthesize pk=_pk;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -34,6 +36,11 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setPk:(int)pk{
+    _pk=pk;
+    [_button setTitle:[NSString stringWithFormat:@"%d",pk] forState:UIControlStateNormal];
 }
 
 @end

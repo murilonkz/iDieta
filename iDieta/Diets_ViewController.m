@@ -78,7 +78,7 @@
     static NSString *CellIdentifier = @"Diets_Cell";
     
     Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [[cell label]setText:[NSString stringWithFormat:@"%d",[indexPath row]]];
+    [cell setPk:[indexPath row]];
     
     
 //      Item *item = [[[Diet itens] objectAtIndex:[indexPath row]];
@@ -89,10 +89,6 @@
 //    [[cell lbPais]setText:[cerva orig]];
 //    [[cell lbTipo]setText:[cerva tipo]];
 //    [[cell swTomei]setSelected:*[cerva tomei]];
-    
-    return cell;
-    
-    
     
     return cell;
 }
