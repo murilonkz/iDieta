@@ -23,7 +23,7 @@
     static Diet *sharedDiet=nil;
     if (!sharedDiet){
         sharedDiet = [[super alloc] init];
-        [sharedDiet setItens:[[NSMutableArray alloc]initWithObjects:[Item.sharedDiet], nil]];
+        [sharedDiet setItens:[[NSMutableArray alloc]initWithObjects:[[Item alloc]init],[[Item alloc]init],[[Item alloc]init],[[Item alloc]init],[[Item alloc]init], nil]];
     }
     return sharedDiet;
 };

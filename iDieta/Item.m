@@ -7,7 +7,7 @@
 //
 
 #import "Item.h"
-
+#import "Meal.h"
 @interface Item ()
 {
     
@@ -17,11 +17,11 @@
 
 @implementation Item
 @synthesize popUp,alarm,meal;
+
 +(Item*)sharedItem{
     static Item *sharedItem=nil;
     if (!sharedItem){
         sharedItem = [[super alloc] init];
-        [sharedItem setAlarm:[[NSDate alloc]initWithTimeIntervalSinceNow:arc4random()%24*60*60*7]];
     }
     return sharedItem;
 };
@@ -32,7 +32,16 @@
 {
     self = [super init];
     if (self) {
-    }
+        [self setAlarm:[[NSDate alloc]initWithTimeIntervalSinceNow:arc4random()%24*60*60*7]];
+        
+        [self setPopUp:arc4random()%2];
+        
+        Meal *meal=[[Meal alloc ]init];
+        [self setMeal:meal];
+        
+        
+    };
+    
     return self;
 }
 
