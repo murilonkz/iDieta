@@ -2,40 +2,23 @@
 //  Diets_ViewController.m
 //  iDieta
 //
-//  Created by Rafael Duarte on 15/12/13.
+//  Created by Thiago Oliveira on 12/16/13.
 //  Copyright (c) 2013 Murilo Campaner. All rights reserved.
 //
 
 #import "Diets_ViewController.h"
-#import "Diet_ViewController.h"
 
 @interface Diets_ViewController ()
-{
-    Diet_ViewController *dietView;
-}
+
 @end
 
 @implementation Diets_ViewController
-@synthesize view;
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        
-        [self setTitle:@"Dieta"];
-        dietView=[[Diet_ViewController alloc]init];
-        
-        [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
-        [self.tableView setTableHeaderView:[self view]];
-        
-        
-        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
-        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
-        
-        
-        
+        // Custom initialization
     }
     return self;
 }
@@ -44,6 +27,9 @@
 {
     [super viewDidLoad];
 
+    UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+    [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
