@@ -7,6 +7,8 @@
     //
 
 #import "Diets_ViewController.h"
+#import "Diets_HeaderViewController.h"
+#import "Diets_Cell.h"
 
 @interface Diets_ViewController ()
 
@@ -18,7 +20,14 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-            // Custom initialization
+        
+        [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
+        
+        
+        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+        
+        
     }
     return self;
 }
@@ -27,8 +36,6 @@
 {
     [super viewDidLoad];
     
-    UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
-    [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
     
         // Uncomment the following line to preserve selection between presentations.
         // self.clearsSelectionOnViewWillAppear = NO;
@@ -49,25 +56,43 @@
 {
 #warning Potentially incomplete method implementation.
         // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
         // Return the number of rows in the section.
-    return 0;
+    return 3+arc4random()%7; //MURILO - return DietasCadastradas.Count()
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+//    static NSString *CellIdentifier = @"Cell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
     
         // Configure the cell...
+    
+    static NSString *CellIdentifier = @"Diets_Cell";
+    
+    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [[cell label]setText:[NSString stringWithFormat:@"%d",[indexPath row]]];
+    
+    
+//      Item *item = [[[Diet itens] objectAtIndex:[indexPath row]];
+//    
+//    [[cell lbNome]setText:[cerva nome]];
+//    NSString *sNota=[NSString stringWithFormat:@"%d",[cerva nota]];
+//    [[cell lbNota]setText: sNota];
+//    [[cell lbPais]setText:[cerva orig]];
+//    [[cell lbTipo]setText:[cerva tipo]];
+//    [[cell swTomei]setSelected:*[cerva tomei]];
+    
+    return cell;
+    
+    
     
     return cell;
 }

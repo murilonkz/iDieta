@@ -26,7 +26,8 @@
 		5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED9F185E5A75006E3A66 /* Meal.m */; };
 		5F3AEDA3185E5A84006E3A66 /* Diet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA2185E5A84006E3A66 /* Diet.m */; };
 		5F3AEDA9185E6007006E3A66 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA8185E6007006E3A66 /* Item.m */; };
-		5F3AEDAB185EBAD1006E3A66 /* Diets_HeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAA185EBAD1006E3A66 /* Diets_HeaderViewController.xib */; };
+		5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */; };
+		5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */; };
 		DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */; };
 		DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */; };
 		EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35441853AB49001106A2 /* Foundation.framework */; };
@@ -84,7 +85,9 @@
 		5F3AEDA2185E5A84006E3A66 /* Diet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet.m; sourceTree = "<group>"; };
 		5F3AEDA7185E6007006E3A66 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		5F3AEDA8185E6007006E3A66 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		5F3AEDAA185EBAD1006E3A66 /* Diets_HeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_HeaderViewController.xib; sourceTree = "<group>"; };
+		5F3AEDAC185FB83A006E3A66 /* Diets_HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_HeaderViewController.h; sourceTree = "<group>"; };
+		5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_HeaderViewController.m; sourceTree = "<group>"; };
+		5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_HeaderViewController.xib; sourceTree = "<group>"; };
 		DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_ViewController.h; sourceTree = "<group>"; };
 		DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_ViewController.m; sourceTree = "<group>"; };
 		DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_ViewController.xib; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */,
 				DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */,
 				5F3AED80185E4CFE006E3A66 /* Diets_Cell.h */,
+				5F3AEDAC185FB83A006E3A66 /* Diets_HeaderViewController.h */,
+				5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */,
 				5F3AED81185E4CFE006E3A66 /* Diets_Cell.m */,
 				5F3AED7B185E4C3D006E3A66 /* Diet_ViewController.h */,
 				5F3AED7C185E4C3D006E3A66 /* Diet_ViewController.m */,
@@ -159,8 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				5F3AED78185E492C006E3A66 /* Start_ViewController.xib */,
-				5F3AEDAA185EBAD1006E3A66 /* Diets_HeaderViewController.xib */,
 				DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */,
+				5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */,
 				5F3AED86185E4D3F006E3A66 /* Diets_Cell.xib */,
 				5F3AED7D185E4C3D006E3A66 /* Diet_ViewController.xib */,
 				5F3AED88185E4D4B006E3A66 /* Diet_Cell.xib */,
@@ -336,7 +341,7 @@
 				DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */,
 				5F3AED9B185E4ECD006E3A66 /* Lunchbox_Cell.xib in Resources */,
 				5F3AED89185E4D4B006E3A66 /* Diet_Cell.xib in Resources */,
-				5F3AEDAB185EBAD1006E3A66 /* Diets_HeaderViewController.xib in Resources */,
+				5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */,
 				5F3AED7A185E492C006E3A66 /* Start_ViewController.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
@@ -367,6 +372,7 @@
 				5F3AED79185E492C006E3A66 /* Start_ViewController.m in Sources */,
 				5F3AED92185E4E7A006E3A66 /* Lunchbox_ViewController.m in Sources */,
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
+				5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */,
 				5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */,
 				5F3AED82185E4CFE006E3A66 /* Diets_Cell.m in Sources */,
 				5F3AED99185E4EAA006E3A66 /* Lunchbox_Cell.m in Sources */,

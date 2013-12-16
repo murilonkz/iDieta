@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Diets_Cell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UITableViewCell *cell;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
