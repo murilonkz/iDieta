@@ -19,6 +19,14 @@
     self = [super initWithStyle:style];
     if (self) {
         [self setTitle:@"Dieta"];
+        
+        [[NSBundle mainBundle] loadNibNamed:@"Diet_ViewController" owner:self options:nil];
+        [self.tableView setTableHeaderView:[self view]];
+        
+        
+        UINib *cel = [UINib nibWithNibName:@"Diet_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diet_Cell"];
+        
     }
     return self;
 }

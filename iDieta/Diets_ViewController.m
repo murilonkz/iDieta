@@ -27,6 +27,14 @@
         [self setTitle:@"Dieta"];
         dietView=[[Diet_ViewController alloc]init];
         
+        [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
+        [self.tableView setTableHeaderView:[self view]];
+        
+        
+        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+        
+        
         
     }
     return self;
