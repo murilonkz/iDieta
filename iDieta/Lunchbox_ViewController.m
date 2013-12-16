@@ -9,20 +9,42 @@
 #import "Lunchbox_ViewController.h"
 
 @interface Lunchbox_ViewController ()
-
+{
+    Lunchbox_ViewController *lunchboxView;
+}
 @end
 
 @implementation Lunchbox_ViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+- (id)init
 {
-    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
         [self setTitle:@"Lancheira"];
+        
+            //lunchboxView=[[Lunchbox_ViewController alloc]init];
+        
+        [[NSBundle mainBundle] loadNibNamed:@"Lunchbox_ViewController" owner:self options:nil];
+        [self.tableView setTableHeaderView:[self view]];
+        
+        
+        UINib *cel = [UINib nibWithNibName:@"Lunchbox_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Lunchbox_Cell"];
         
     }
     return self;
 }
+
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        [self setTitle:@"Lancheira"];
+//        
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {

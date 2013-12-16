@@ -8,6 +8,9 @@
 
 #import "Diets_ViewController.h"
 #import "Diet_ViewController.h"
+#import "Diet.h"
+#import "Diets_Cell.h"
+#import "Item.h"
 
 @interface Diets_ViewController ()
 {
@@ -15,30 +18,48 @@
 }
 @end
 
+
 @implementation Diets_ViewController
 @synthesize view;
 
-
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)init
 {
-    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
         
-        [self setTitle:@"Dieta"];
+        [self setTitle:@"Dietas"];
         dietView=[[Diet_ViewController alloc]init];
         
         [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
         [self.tableView setTableHeaderView:[self view]];
         
-        
-        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
-        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
-        
-        
-        
+        UINib *cel = [UINib nibWithNibName:@"Diet_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diet_Cell"];
     }
     return self;
 }
+
+
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        
+//        [self setTitle:@"Dieta"];
+//        dietView=[[Diet_ViewController alloc]init];
+//        
+//        [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
+//        [self.tableView setTableHeaderView:[self view]];
+//        
+//        
+//        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+//        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+//    }
+//    return self;
+//}
+
+
+
 
 - (void)viewDidLoad
 {
@@ -57,29 +78,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[[Diet sharedDiet]itens]count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    static NSString *CellIdentifier = @"Diets_Cell";
+    
+    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    Item *item = [[[Diet sharedDiet]itens]objectAtIndex:[indexPath row]];
+    
+    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
     
     // Configure the cell...
     
@@ -95,26 +118,35 @@
 }
 */
 
-/*
-// Override to support editing the table view.
+
+ // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        // Delete the row from the data source
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }   
+//    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//    }   
+//}
+//{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+        Item *item = [[[Diet sharedDiet]itens] objectAtIndex:indexPath.row];
+        [[Diet sharedDiet] RemoveItem:item];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+    }
 }
-*/
 
-/*
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
+    [[Diet sharedDiet]moveItemFrom:fromIndexPath.row To:toIndexPath.row];
 }
-*/
+
+
 
 /*
 // Override to support conditional rearranging of the table view.
@@ -133,7 +165,7 @@
 {
     // Navigation logic may go here, for example:
     // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+//    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
 
     // Pass the selected object to the new view controller.
     

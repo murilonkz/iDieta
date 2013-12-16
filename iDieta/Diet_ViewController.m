@@ -9,16 +9,20 @@
 #import "Diet_ViewController.h"
 
 @interface Diet_ViewController ()
-
+{
+    Diet_ViewController *dietView;
+}
 @end
 
 @implementation Diet_ViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)init
 {
-    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
         [self setTitle:@"Dieta"];
+        
+            //dietView=[[Diet_ViewController alloc]init];
         
         [[NSBundle mainBundle] loadNibNamed:@"Diet_ViewController" owner:self options:nil];
         [self.tableView setTableHeaderView:[self view]];
@@ -30,6 +34,34 @@
     }
     return self;
 }
+
+
+
+
+
+
+
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        [self setTitle:@"Dieta"];
+//        
+//        [[NSBundle mainBundle] loadNibNamed:@"Diet_ViewController" owner:self options:nil];
+//        [self.tableView setTableHeaderView:[self view]];
+//        
+//        
+//        UINib *cel = [UINib nibWithNibName:@"Diet_Cell" bundle:nil];
+//        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diet_Cell"];
+//        
+//    }
+//    return self;
+//}
+
+
+
+
+
 
 - (void)viewDidLoad
 {

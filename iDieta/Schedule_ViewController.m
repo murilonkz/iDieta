@@ -9,19 +9,43 @@
 #import "Schedule_ViewController.h"
 
 @interface Schedule_ViewController ()
-
+{
+    Schedule_ViewController *scheduleView;
+}
 @end
 
 @implementation Schedule_ViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)init
 {
-    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
         [self setTitle:@"Agenda"];
+        
+            //scheduleView=[[Schedule_ViewController alloc]init];
+        
+        [[NSBundle mainBundle] loadNibNamed:@"Schedule_ViewController" owner:self options:nil];
+        [self.tableView setTableHeaderView:[self view]];
+        
+        
+        UINib *cel = [UINib nibWithNibName:@"Schedule_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Schedule_Cell"];
+        
+        
     }
     return self;
 }
+
+
+
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    if (self) {
+//        [self setTitle:@"Agenda"];
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad
 {
@@ -46,19 +70,19 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Schedule_Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
