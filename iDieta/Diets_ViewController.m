@@ -2,7 +2,7 @@
 //  Diets_ViewController.m
 //  iDieta
 //
-//  Created by Rafael Duarte on 15/12/13.
+//  Created by Thiago Oliveira on 12/16/13.
 //  Copyright (c) 2013 Murilo Campaner. All rights reserved.
 //
 
@@ -13,9 +13,7 @@
 #import "Item.h"
 
 @interface Diets_ViewController ()
-{
-    Diet_ViewController *dietView;
-}
+
 @end
 
 
@@ -65,6 +63,9 @@
 {
     [super viewDidLoad];
 
+    UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+    [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
