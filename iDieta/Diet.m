@@ -23,10 +23,17 @@
     static Diet *sharedDiet=nil;
     if (!sharedDiet){
         sharedDiet = [[super alloc] init];
-        [sharedDiet setItens:[[NSMutableArray alloc]initWithObjects:[[Item alloc]init],[[Item alloc]init],[[Item alloc]init],[[Item alloc]init],[[Item alloc]init], nil]];
-        [sharedDiet setNome:@"Dieta da Pança"];
-        
+        [[self sharedDiet] setItens:[[NSMutableArray alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[[self sharedDiet] itens]addObject:[[Item alloc]init]];
+        [[self sharedDiet] setNome:@"Dieta da Pança"];
+
     }
+    
     return sharedDiet;
 };
 
@@ -34,8 +41,10 @@
 {
     self = [super init];
     if (self) {
-        self = [Diet sharedDiet];
-    }
+            //self = [Diet sharedDiet];
+        }
+    
+
     return self;
 }
 

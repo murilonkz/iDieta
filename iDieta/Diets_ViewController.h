@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Diets_ViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UIView *viewHeader;
+@property (strong, nonatomic) IBOutlet UITableView *view;
+
 
 @end

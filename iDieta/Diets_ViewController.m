@@ -18,7 +18,7 @@
 
 
 @implementation Diets_ViewController
-@synthesize view;
+@synthesize view,viewHeader;
 
 - (id)init
 {
@@ -26,13 +26,17 @@
     if (self) {
         
         [self setTitle:@"Dietas"];
-        dietView=[[Diet_ViewController alloc]init];
+//        Diet_ViewController *dietview=[[Diet_ViewController alloc]init];
         
         [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
-        [self.tableView setTableHeaderView:[self view]];
+        [[NSBundle mainBundle] loadNibNamed:@"Diets_HeaderViewController" owner:self options:nil];
         
-        UINib *cel = [UINib nibWithNibName:@"Diet_Cell" bundle:nil];
-        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diet_Cell"];
+        
+        [self setTableView:view];
+        [[self tableView] setTableHeaderView:viewHeader];
+        
+        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
     }
     return self;
 }
