@@ -91,9 +91,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F7C874C185E1E690031208E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F3AED76185E492C006E3A66 /* Start_ViewController.h */,
+				5F3AED77185E492C006E3A66 /* Start_ViewController.m */,
+				DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */,
+				DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */,
+				5F3AEDAC185FB83A006E3A66 /* Diets_HeaderViewController.h */,
+				5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */,
+				5F3AED80185E4CFE006E3A66 /* Diets_Cell.h */,
+				5F3AED81185E4CFE006E3A66 /* Diets_Cell.m */,
+				5F3AED7B185E4C3D006E3A66 /* Diet_ViewController.h */,
+				5F3AED7C185E4C3D006E3A66 /* Diet_ViewController.m */,
+				5F3AED83185E4D17006E3A66 /* Diet_Cell.h */,
+				5F3AED84185E4D17006E3A66 /* Diet_Cell.m */,
+				5F3AED8A185E4E6C006E3A66 /* Schedule_ViewController.h */,
+				5F3AED8B185E4E6C006E3A66 /* Schedule_ViewController.m */,
+				5F3AED94185E4E97006E3A66 /* Schedule_Cell.h */,
+				5F3AED95185E4E97006E3A66 /* Schedule_Cell.m */,
+				5F3AED8F185E4E7A006E3A66 /* Lunchbox_ViewController.h */,
+				5F3AED90185E4E7A006E3A66 /* Lunchbox_ViewController.m */,
+				5F3AED97185E4EAA006E3A66 /* Lunchbox_Cell.h */,
+				5F3AED98185E4EAA006E3A66 /* Lunchbox_Cell.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F7C874D185E1E6E0031208E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F3AED78185E492C006E3A66 /* Start_ViewController.xib */,
+				DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */,
+				5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */,
+				5F3AED86185E4D3F006E3A66 /* Diets_Cell.xib */,
+				5F3AED7D185E4C3D006E3A66 /* Diet_ViewController.xib */,
+				5F3AED88185E4D4B006E3A66 /* Diet_Cell.xib */,
+				5F3AED8C185E4E6C006E3A66 /* Schedule_ViewController.xib */,
+				5F3AED9C185E4EE4006E3A66 /* Schedule_Cell.xib */,
+				5F3AED91185E4E7A006E3A66 /* Lunchbox_ViewController.xib */,
+				5F3AED9A185E4ECD006E3A66 /* Lunchbox_Cell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F7C874E185E1E730031208E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F3AED9E185E5A75006E3A66 /* Meal.h */,
+				5F3AED9F185E5A75006E3A66 /* Meal.m */,
+				5F3AEDA7185E6007006E3A66 /* Item.h */,
+				5F3AEDA8185E6007006E3A66 /* Item.m */,
+				5F3AEDA1185E5A84006E3A66 /* Diet.h */,
+				5F3AEDA2185E5A84006E3A66 /* Diet.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EBAC35381853AB49001106A2 = {
 			isa = PBXGroup;
 			children = (
+				5F7C874E185E1E730031208E /* Model */,
+				5F7C874D185E1E6E0031208E /* View */,
+				5F7C874C185E1E690031208E /* Controller */,
 				EBAC354A1853AB49001106A2 /* iDieta */,
 				EBAC35631853AB49001106A2 /* iDietaTests */,
 				EBAC35431853AB49001106A2 /* Frameworks */,
@@ -273,6 +333,11 @@
 				EBAC35C1185E3329001106A2 /* IndexViewController.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
+				5F3AED7F185E4C3D006E3A66 /* Diet_ViewController.xib in Resources */,
+				5F3AED87185E4D3F006E3A66 /* Diets_Cell.xib in Resources */,
+				5F3AED9D185E4EE4006E3A66 /* Schedule_Cell.xib in Resources */,
+				5F3AED8E185E4E6C006E3A66 /* Schedule_ViewController.xib in Resources */,
+				5F3AED93185E4E7A006E3A66 /* Lunchbox_ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
