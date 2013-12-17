@@ -28,13 +28,15 @@
     //Comments
     DietaModel *sharedModel = [DietaModel sharedModel];
     // Limpa todas as tabelas do BD
-    //                 [sharedModel limparBd];
+    //[sharedModel limparBd];
     
     
     
     
     //CASO O BANCO AINDA NÃOA TENHA SIDO CRIADO Adiciona duas dietas modelos
     if(YES){
+    
+    /*
     Dieta *dieta = [[Dieta alloc]init];
     [dieta setNome:@"Dieta1"];
     [dieta setCaloriasDiarias:1500];
@@ -63,10 +65,15 @@
     [alimento3 setNome:@"Pera"];
     [alimento3 setHorarioConsumo:@"10:00"];
     [alimento3 setCalorias:80];
+     
+     
     
     NSMutableArray *alimentosDieta = [[NSMutableArray alloc]initWithObjects:alimento, alimento2, alimento3, nil];
     
+     
+     
     [sharedModel addAlimentos:alimentosDieta naDietaId: 0];
+     */
     }
     
     
@@ -74,10 +81,10 @@
     [[self window]setRootViewController:navigationController];
     [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:0.5f green:0.5f blue:0.7f alpha:1.0f]];
     
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

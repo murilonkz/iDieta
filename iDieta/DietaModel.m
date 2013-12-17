@@ -82,7 +82,7 @@
     char *errMsg;
     const char *dbpath = [_databasePath UTF8String];
     BOOL state;
-    
+
     if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
         NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO DIETAS (nome, calorias_diarias) VALUES (\"%@\", \"%lf\")", dieta.nome, dieta.caloriasDiarias];
         const char *insert_stmt = [insertSQL UTF8String];

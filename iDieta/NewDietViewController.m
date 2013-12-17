@@ -7,6 +7,8 @@
 //
 
 #import "NewDietViewController.h"
+#import "DietaModel.h"
+#import "Dieta.h"
 
 @interface NewDietViewController ()
 
@@ -40,6 +42,9 @@
     NSString *name;
     double cal;
     
+    DietaModel *dieta = [DietaModel sharedModel];
+
+    
     name=txtName.text;
     cal=[txtCal.text doubleValue];
     
@@ -48,7 +53,13 @@
     
     [btnSave setEnabled:NO];
     
-//RECORD THE NEW DIET TO DB
+    Dieta *novaDieta = [[Dieta alloc]init];
+    [novaDieta setNome: name];
+    [novaDieta setCaloriasDiarias:cal];
+    
+    BOOL ret = [dieta addDieta: novaDieta];
+    
+    NSLog(@"%d", ret);
     
     UIAlertView *alertView = [[UIAlertView alloc]
                               initWithTitle:@"DIETA ADICIONADA"
