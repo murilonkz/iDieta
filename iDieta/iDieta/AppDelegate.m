@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "Start_ViewController.h"
+#import "Diets_ViewController.h"
+#import "DietaModel.h"
 
 @implementation AppDelegate
 
@@ -25,8 +27,45 @@
     */
     
     //Comments
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    // Limpa todas as tabelas do BD
+    [sharedModel limparBd];
     
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[Start_ViewController alloc] initWithNibName:@"Start_ViewController" bundle:nil]];
+    // Adiciona duas novas dietas
+    Dieta *dieta = [[Dieta alloc]init];
+    [dieta setNome:@"Dieta1"];
+    [dieta setCaloriasDiarias:1500];
+    
+    Dieta *dieta2 = [[Dieta alloc]init];
+    [dieta2 setNome:@"Dieta2"];
+    [dieta2 setCaloriasDiarias:2000];
+    
+    [sharedModel addDieta:dieta];
+    [sharedModel addDieta: dieta2];
+    
+    Alimento *alimento = [[Alimento alloc]init];
+    [alimento setDiaConsumo:@"Segunda-Feira"];
+    [alimento setNome:@"Banana"];
+    [alimento setHorarioConsumo:@"09:00"];
+    [alimento setCalorias:80];
+    
+    Alimento *alimento2 = [[Alimento alloc]init];
+    [alimento2 setDiaConsumo:@"Terça-Feira"];
+    [alimento2 setNome:@"Maçã"];
+    [alimento2 setHorarioConsumo:@"16:00"];
+    [alimento2 setCalorias:80];
+    
+    Alimento *alimento3 = [[Alimento alloc]init];
+    [alimento3 setDiaConsumo:@"Segunda-Feira"];
+    [alimento3 setNome:@"Pera"];
+    [alimento3 setHorarioConsumo:@"10:00"];
+    [alimento3 setCalorias:80];
+    
+    NSMutableArray *alimentosDieta = [[NSMutableArray alloc]initWithObjects:alimento, alimento2, alimento3, nil];
+    
+    [sharedModel addAlimentos:alimentosDieta naDietaId: 0];
+    
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[Diets_ViewController alloc] initWithNibName:@"Diets_ViewController" bundle:nil]];
     [[self window]setRootViewController:navigationController];
     [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:0.5f green:0.5f blue:0.7f alpha:1.0f]];
     

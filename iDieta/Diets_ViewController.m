@@ -7,8 +7,6 @@
     //
 
 #import "Diets_ViewController.h"
-#import "Diets_HeaderViewController.h"
-#import "Diets_Cell.h"
 #import "DietaModel.h"
 @interface Diets_ViewController ()
 
@@ -19,16 +17,9 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
+    
     if (self) {
-        
-        [[NSBundle mainBundle] loadNibNamed:@"Diets_ViewController" owner:self options:nil];
-        
-        
-        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
-        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
-        
-        DietaModel *sharedModel = [DietaModel sharedModel];
-        _dietas = [sharedModel getAllDietas];
+    
         
     }
     return self;
@@ -37,6 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"asdsa");
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    
+    
+    _dietas = [sharedModel getAllDietas];
         // Uncomment the following line to preserve selection between presentations.
         // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -68,28 +64,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    static NSString *CellIdentifier = @"Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     
         // Configure the cell...
-    
-    static NSString *CellIdentifier = @"Diets_Cell";
-    
-    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [cell setPk: [[_dietas objectAtIndex:[indexPath row]]idDieta]];
-    [[cell button]setTitle:[[_dietas objectAtIndex:[indexPath row]]nome] forState: UIControlStateNormal];
-    
-//      Item *item = [[[Diet itens] objectAtIndex:[indexPath row]];
-//    
-//    [[cell lbNome]setText:[cerva nome]];
-//    NSString *sNota=[NSString stringWithFormat:@"%d",[cerva nota]];
-//    [[cell lbNota]setText: sNota];
-//    [[cell lbPais]setText:[cerva orig]];
-//    [[cell lbTipo]setText:[cerva tipo]];
-//    [[cell swTomei]setSelected:*[cerva tomei]];
+    [[cell textLabel]setText:[[_dietas objectAtIndex:[indexPath row]]nome]];
     
     return cell;
 }
