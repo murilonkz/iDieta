@@ -41,7 +41,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
 }
+
+-(void)dismissKeyboard {
+    [txtCalorias resignFirstResponder];
+    [txtAlimento resignFirstResponder];
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
