@@ -45,7 +45,7 @@
     
     alimento=txtAlimento.text;
     cal=[txtCalorias.text doubleValue];
-    alarm=[datePicker.date];
+        //alarm=[datePicker.date];
     
     txtAlimento.text=@"";
     txtCalorias.text=@"";

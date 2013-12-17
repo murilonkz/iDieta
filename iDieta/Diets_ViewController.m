@@ -156,7 +156,17 @@
  
  // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
  - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
- {
+{
+    Diet_ViewController *dietView=[[Diet_ViewController alloc]init];
+    
+    
+    [dietView setTitle:@"TITULO DA CÉLULA CORRENTE"];
+    
+    [self.navigationController pushViewController:dietView animated:YES];
+ 
+    
+    
+ 
  // Navigation logic may go here, for example:
  // Create the next view controller.
  //DetailViewController *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
