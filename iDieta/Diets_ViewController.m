@@ -38,8 +38,7 @@
     NSLog(@"foi");
     NewDietViewController *newView=[[NewDietViewController alloc]init];
     [self.navigationController pushViewController:newView animated:YES];
-//    ThirdViewController *third = [[ThirdViewController alloc]init];
-//    [self.navigationController pushViewController:third animated:YES];
+
 }
 
 - (IBAction)configView:(id)sender

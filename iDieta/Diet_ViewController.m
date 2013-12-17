@@ -7,7 +7,7 @@
 //
 
 #import "Diet_ViewController.h"
-
+#import "Alimento_ViewController.h"
 @interface Diet_ViewController ()
 
 @end
@@ -26,13 +26,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    
+    UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithTitle:@"Novo Item" style:UIBarButtonItemStylePlain target:self action:@selector(novaView:)];
+    [self.navigationItem setRightBarButtonItem:next];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (IBAction)novaView:(id)sender
+{
+    NSLog(@"foi");
+    Alimento_ViewController *newView=[[Alimento_ViewController alloc]init];
+    [self.navigationController pushViewController:newView animated:YES];
+        //    ThirdViewController *third = [[ThirdViewController alloc]init];
+        //    [self.navigationController pushViewController:third animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

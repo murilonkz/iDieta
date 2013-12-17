@@ -68,6 +68,9 @@
     
 }
 
+- (IBAction)TouchUpOutside:(id)sender {
+    [self.view endEditing:YES];
+}
 
 
 - (IBAction)ChangedItem:(id)sender {
@@ -77,12 +80,20 @@
         {[btnSalvar setEnabled:NO];}
     };
 }
+
 - (IBAction)ChangedCal:(id)sender {
     if (!(([txtAlimento.text isEqual:@""])||([txtCalorias.text isEqual:@""])))
         {[btnSalvar setEnabled:YES];}
     else{
         {[btnSalvar setEnabled:NO];}
     };
+    
 }
 
+
+
+
 @end
+
+
+
