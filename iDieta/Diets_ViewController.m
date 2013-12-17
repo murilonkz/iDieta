@@ -104,30 +104,6 @@
 }
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Diets_Cell";
-//    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-////    if (cell == nil) {
-////        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-////    }
-//    
-//        // Configure the cell...
-//        [[cell textLabel]setText:[[_dietas objectAtIndex:[indexPath row]]nome]];
-//        //[cell setCellPk:[indexPath row] Name:[[_dietas objectAtIndex:[indexPath row]]nome] isEnabled:YES NavCntrl:self.navigationController];
-//    return cell;
-//}
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Diets_Cell";
-//    
-//    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    [cell setPk:[indexPath row]];
-//    [cell setCellPk:[indexPath row] Name:[NSString stringWithFormat:@"Dieta numero %d",arc4random()%50] isEnabled:arc4random()%2 NavCntrl:self.navigationController];
-//    
-//    return cell;
-//}
 
 
 

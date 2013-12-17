@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtAlimento;
 @property (weak, nonatomic) IBOutlet UITextField *txtCalorias;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIButton *btnSalvar;
 
 @end
