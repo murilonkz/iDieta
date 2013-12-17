@@ -23,9 +23,6 @@
 		5F3AED99185E4EAA006E3A66 /* Lunchbox_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED98185E4EAA006E3A66 /* Lunchbox_Cell.m */; };
 		5F3AED9B185E4ECD006E3A66 /* Lunchbox_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED9A185E4ECD006E3A66 /* Lunchbox_Cell.xib */; };
 		5F3AED9D185E4EE4006E3A66 /* Schedule_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED9C185E4EE4006E3A66 /* Schedule_Cell.xib */; };
-		5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED9F185E5A75006E3A66 /* Meal.m */; };
-		5F3AEDA3185E5A84006E3A66 /* Diet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA2185E5A84006E3A66 /* Diet.m */; };
-		5F3AEDA9185E6007006E3A66 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA8185E6007006E3A66 /* Item.m */; };
 		5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */; };
 		5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */; };
 		DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */; };
@@ -42,6 +39,12 @@
 		EBAC35601853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
 		EBAC35681853AB49001106A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBAC35661853AB49001106A2 /* InfoPlist.strings */; };
 		EBAC356A1853AB49001106A2 /* iDietaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35691853AB49001106A2 /* iDietaTests.m */; };
+		EBBEB431185FF53000DD510F /* Alimento.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB42C185FF53000DD510F /* Alimento.m */; };
+		EBBEB432185FF53000DD510F /* Dieta.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB42E185FF53000DD510F /* Dieta.m */; };
+		EBBEB433185FF53000DD510F /* DietaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB430185FF53000DD510F /* DietaModel.m */; };
+		EBBEB435185FF55200DD510F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBEB434185FF55200DD510F /* libsqlite3.dylib */; };
+		EBBEB437185FF56300DD510F /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBEB436185FF56300DD510F /* IndexViewController.xib */; };
+		EBBEB43A185FF56A00DD510F /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB439185FF56A00DD510F /* IndexViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +82,6 @@
 		5F3AED98185E4EAA006E3A66 /* Lunchbox_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lunchbox_Cell.m; sourceTree = "<group>"; };
 		5F3AED9A185E4ECD006E3A66 /* Lunchbox_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lunchbox_Cell.xib; sourceTree = "<group>"; };
 		5F3AED9C185E4EE4006E3A66 /* Schedule_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Schedule_Cell.xib; sourceTree = "<group>"; };
-		5F3AED9E185E5A75006E3A66 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
-		5F3AED9F185E5A75006E3A66 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
-		5F3AEDA1185E5A84006E3A66 /* Diet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet.h; sourceTree = "<group>"; };
-		5F3AEDA2185E5A84006E3A66 /* Diet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet.m; sourceTree = "<group>"; };
-		5F3AEDA7185E6007006E3A66 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		5F3AEDA8185E6007006E3A66 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5F3AEDAC185FB83A006E3A66 /* Diets_HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_HeaderViewController.h; sourceTree = "<group>"; };
 		5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_HeaderViewController.m; sourceTree = "<group>"; };
 		5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_HeaderViewController.xib; sourceTree = "<group>"; };
@@ -107,6 +104,16 @@
 		EBAC35651853AB49001106A2 /* iDietaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDietaTests-Info.plist"; sourceTree = "<group>"; };
 		EBAC35671853AB49001106A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBAC35691853AB49001106A2 /* iDietaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDietaTests.m; sourceTree = "<group>"; };
+		EBBEB42B185FF53000DD510F /* Alimento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento.h; sourceTree = "<group>"; };
+		EBBEB42C185FF53000DD510F /* Alimento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento.m; sourceTree = "<group>"; };
+		EBBEB42D185FF53000DD510F /* Dieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dieta.h; sourceTree = "<group>"; };
+		EBBEB42E185FF53000DD510F /* Dieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dieta.m; sourceTree = "<group>"; };
+		EBBEB42F185FF53000DD510F /* DietaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaModel.h; sourceTree = "<group>"; };
+		EBBEB430185FF53000DD510F /* DietaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaModel.m; sourceTree = "<group>"; };
+		EBBEB434185FF55200DD510F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EBBEB436185FF56300DD510F /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		EBBEB438185FF56A00DD510F /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		EBBEB439185FF56A00DD510F /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBEB435185FF55200DD510F /* libsqlite3.dylib in Frameworks */,
 				EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */,
 				EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */,
 				EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */,
@@ -136,6 +144,8 @@
 		5F7C874C185E1E690031208E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEB438185FF56A00DD510F /* IndexViewController.h */,
+				EBBEB439185FF56A00DD510F /* IndexViewController.m */,
 				5F3AED76185E492C006E3A66 /* Start_ViewController.h */,
 				5F3AED77185E492C006E3A66 /* Start_ViewController.m */,
 				DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */,
@@ -163,6 +173,7 @@
 		5F7C874D185E1E6E0031208E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEB436185FF56300DD510F /* IndexViewController.xib */,
 				5F3AED78185E492C006E3A66 /* Start_ViewController.xib */,
 				DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */,
 				5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */,
@@ -180,12 +191,12 @@
 		5F7C874E185E1E730031208E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5F3AED9E185E5A75006E3A66 /* Meal.h */,
-				5F3AED9F185E5A75006E3A66 /* Meal.m */,
-				5F3AEDA7185E6007006E3A66 /* Item.h */,
-				5F3AEDA8185E6007006E3A66 /* Item.m */,
-				5F3AEDA1185E5A84006E3A66 /* Diet.h */,
-				5F3AEDA2185E5A84006E3A66 /* Diet.m */,
+				EBBEB42B185FF53000DD510F /* Alimento.h */,
+				EBBEB42C185FF53000DD510F /* Alimento.m */,
+				EBBEB42D185FF53000DD510F /* Dieta.h */,
+				EBBEB42E185FF53000DD510F /* Dieta.m */,
+				EBBEB42F185FF53000DD510F /* DietaModel.h */,
+				EBBEB430185FF53000DD510F /* DietaModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 		EBAC35431853AB49001106A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBBEB434185FF55200DD510F /* libsqlite3.dylib */,
 				EBAC35441853AB49001106A2 /* Foundation.framework */,
 				EBAC35461853AB49001106A2 /* CoreGraphics.framework */,
 				EBAC35481853AB49001106A2 /* UIKit.framework */,
@@ -342,6 +354,7 @@
 				5F3AED9B185E4ECD006E3A66 /* Lunchbox_Cell.xib in Resources */,
 				5F3AED89185E4D4B006E3A66 /* Diet_Cell.xib in Resources */,
 				5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */,
+				EBBEB437185FF56300DD510F /* IndexViewController.xib in Resources */,
 				5F3AED7A185E492C006E3A66 /* Start_ViewController.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
@@ -368,21 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F3AEDA3185E5A84006E3A66 /* Diet.m in Sources */,
 				5F3AED79185E492C006E3A66 /* Start_ViewController.m in Sources */,
 				5F3AED92185E4E7A006E3A66 /* Lunchbox_ViewController.m in Sources */,
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
 				5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */,
-				5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */,
 				5F3AED82185E4CFE006E3A66 /* Diets_Cell.m in Sources */,
 				5F3AED99185E4EAA006E3A66 /* Lunchbox_Cell.m in Sources */,
 				5F3AED7E185E4C3D006E3A66 /* Diet_ViewController.m in Sources */,
+				EBBEB432185FF53000DD510F /* Dieta.m in Sources */,
 				5F3AED96185E4E97006E3A66 /* Schedule_Cell.m in Sources */,
 				EBAC35511853AB49001106A2 /* main.m in Sources */,
 				5F3AED85185E4D17006E3A66 /* Diet_Cell.m in Sources */,
+				EBBEB433185FF53000DD510F /* DietaModel.m in Sources */,
 				DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */,
-				5F3AEDA9185E6007006E3A66 /* Item.m in Sources */,
+				EBBEB431185FF53000DD510F /* Alimento.m in Sources */,
 				5F3AED8D185E4E6C006E3A66 /* Schedule_ViewController.m in Sources */,
+				EBBEB43A185FF56A00DD510F /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

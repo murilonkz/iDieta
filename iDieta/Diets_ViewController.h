@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Diets_ViewController : UITableViewController
-
+@property NSMutableArray *dietas;
 @end

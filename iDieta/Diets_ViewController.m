@@ -9,7 +9,7 @@
 #import "Diets_ViewController.h"
 #import "Diets_HeaderViewController.h"
 #import "Diets_Cell.h"
-
+#import "DietaModel.h"
 @interface Diets_ViewController ()
 
 @end
@@ -27,6 +27,8 @@
         UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
         [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
         
+        DietaModel *sharedModel = [DietaModel sharedModel];
+        _dietas = [sharedModel getAllDietas];
         
     }
     return self;
@@ -35,8 +37,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
         // Uncomment the following line to preserve selection between presentations.
         // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -62,7 +62,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
         // Return the number of rows in the section.
-    return 3+arc4random()%7; //MURILO - return DietasCadastradas.Count()
+
+    return _dietas.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -78,8 +79,8 @@
     static NSString *CellIdentifier = @"Diets_Cell";
     
     Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [cell setPk:[indexPath row]];
-    
+    [cell setPk: [[_dietas objectAtIndex:[indexPath row]]idDieta]];
+    [[cell button]setTitle:[[_dietas objectAtIndex:[indexPath row]]nome] forState: UIControlStateNormal];
     
 //      Item *item = [[[Diet itens] objectAtIndex:[indexPath row]];
 //    
