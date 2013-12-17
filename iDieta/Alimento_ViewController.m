@@ -41,12 +41,15 @@
 - (IBAction)ClickSalvar:(id)sender {
     NSString *alimento;
     double cal;
+    NSDate *alarm;
     
     alimento=txtAlimento.text;
     cal=[txtCalorias.text doubleValue];
+    alarm=[datePicker.date];
     
     txtAlimento.text=@"";
     txtCalorias.text=@"";
+    
     
     [btnSalvar setEnabled:NO];
     
