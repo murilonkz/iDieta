@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Alimento_ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *txtAlimento;
+@property (weak, nonatomic) IBOutlet UITextField *txtCalorias;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @end

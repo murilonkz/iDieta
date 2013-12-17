@@ -8,7 +8,6 @@
 
 #import "Diets_ViewController.h"
 #import "DietaModel.h"
-#import "Diets_Cell.h"
 #import "ConfigViewController.h"
 #import "NewDietViewController.h"
 #import "Diet_ViewController.h"
@@ -29,8 +28,6 @@
     
     if (self) {
         
-        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
-        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
         
     }
     return self;
