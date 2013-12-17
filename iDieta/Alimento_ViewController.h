@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtCalorias;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIButton *btnSalvar;
+- (id)initWithId:(int)idD;
 
 @end

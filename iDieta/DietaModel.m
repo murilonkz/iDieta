@@ -142,7 +142,7 @@
     
     if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
         for (int i = 0; i < alimentos.count; i++) {
-            NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO dieta_alimentos (fk_id_alimento, fk_id_dieta, dia_semana, horario) VALUES (\"%i\", \"%i\", \"%@\", \"%@\")", [[alimentos objectAtIndex:i] idAlimento], idDieta, [[alimentos objectAtIndex:i]diaConsumo], [[alimentos objectAtIndex:i]horarioConsumo]];
+            NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO dieta_alimentos (fk_id_alimento, fk_id_dieta, horario) VALUES (\"%i\", \"%i\", \"%@\", \"%@\")", [[alimentos objectAtIndex:i] idAlimento], idDieta, [[alimentos objectAtIndex:i]horarioConsumo]];
             const char *insert_stmt = [insertSQL UTF8String];
             sqlite3_exec(_DB, insert_stmt, NULL, NULL, &errMsg);
         }

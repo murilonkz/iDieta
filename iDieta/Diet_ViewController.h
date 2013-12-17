@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Diet_ViewController : UITableViewController
-
+- (id) initWhitId:(int)idTable;
 @end

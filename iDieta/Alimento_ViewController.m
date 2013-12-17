@@ -7,8 +7,12 @@
 //
 
 #import "Alimento_ViewController.h"
+#import "DietaModel.h"
+#import "Alimento.h"
 
-@interface Alimento_ViewController ()
+@interface Alimento_ViewController (){
+    int idDiet;
+}
 
 @end
 
@@ -20,6 +24,15 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+    }
+    return self;
+}
+
+- (id)initWithId:(int)idD
+{
+    self = [super init];
+    if (self) {
+        idDiet = idD;
     }
     return self;
 }
@@ -45,8 +58,18 @@
     
     alimento=txtAlimento.text;
     cal=[txtCalorias.text doubleValue];
-        //alarm=[datePicker.date];
-    
+    alarm = [datePicker date];
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    Alimento *ali = [[Alimento alloc]init];
+    [ali setNome:alimento];
+    [ali setCalorias:cal];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd-MMM-yyyy"];
+     NSString *dateString = [formatter stringFromDate:alarm];
+    [ali setHorarioConsumo:dateString];
+    NSMutableArray *alimentos = [[NSMutableArray alloc]init];
+    [alimentos addObject:ali];
+    [sharedModel addAlimentos:alimentos naDietaId:idDiet];
     txtAlimento.text=@"";
     txtCalorias.text=@"";
     

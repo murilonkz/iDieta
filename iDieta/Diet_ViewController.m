@@ -8,7 +8,10 @@
 
 #import "Diet_ViewController.h"
 #import "Alimento_ViewController.h"
-@interface Diet_ViewController ()
+#import "DietaModel.h"
+@interface Diet_ViewController (){
+    int idCell;
+}
 
 @end
 
@@ -23,9 +26,21 @@
     return self;
 }
 
+- (id) initWhitId:(int)idTable{
+    self = [super init];
+    if (self) {
+        idCell = idTable;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    NSMutableArray *dietas = [sharedModel getAllDietas];
+    [self setTitle:[[dietas objectAtIndex:idCell]nome]];
+    
     
     
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithTitle:@"Novo Item" style:UIBarButtonItemStylePlain target:self action:@selector(novaView:)];
@@ -39,11 +54,8 @@
 
 - (IBAction)novaView:(id)sender
 {
-    NSLog(@"foi");
-    Alimento_ViewController *newView=[[Alimento_ViewController alloc]init];
+    Alimento_ViewController *newView=[[Alimento_ViewController alloc]initWithId:idCell];
     [self.navigationController pushViewController:newView animated:YES];
-        //    ThirdViewController *third = [[ThirdViewController alloc]init];
-        //    [self.navigationController pushViewController:third animated:YES];
 }
 
 
