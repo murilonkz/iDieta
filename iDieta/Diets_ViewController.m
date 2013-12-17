@@ -51,6 +51,8 @@
 
 - (void)viewDidLoad
 {
+    
+
     [super viewDidLoad];
     [self setTitle:@"Dietas"];
     
@@ -62,7 +64,7 @@
     DietaModel *sharedModel = [DietaModel sharedModel];
     _dietas = [sharedModel getAllDietas];
         // Uncomment the following line to preserve selection between presentations.
-        // self.clearsSelectionOnViewWillAppear = NO;
+        // self.clearsSelectionOnViewWillAppear = YES;
     
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -132,7 +134,12 @@
 
 
 
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    _dietas = [sharedModel getAllDietas];
+    [[self tableView]reloadData];
+}
 
 
 
