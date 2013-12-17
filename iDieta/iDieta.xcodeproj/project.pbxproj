@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB73C22C185E3FBD00671E19 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */; };
 		EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35441853AB49001106A2 /* Foundation.framework */; };
 		EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35461853AB49001106A2 /* CoreGraphics.framework */; };
 		EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
@@ -19,6 +20,11 @@
 		EBAC35601853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
 		EBAC35681853AB49001106A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBAC35661853AB49001106A2 /* InfoPlist.strings */; };
 		EBAC356A1853AB49001106A2 /* iDietaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35691853AB49001106A2 /* iDietaTests.m */; };
+		EBAC35B6185E22C6001106A2 /* DietaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35B5185E22C6001106A2 /* DietaModel.m */; };
+		EBAC35B9185E2D04001106A2 /* Alimento.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35B8185E2D04001106A2 /* Alimento.m */; };
+		EBAC35BC185E2D0F001106A2 /* Dieta.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35BB185E2D0F001106A2 /* Dieta.m */; };
+		EBAC35C0185E3329001106A2 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35BE185E3329001106A2 /* IndexViewController.m */; };
+		EBAC35C1185E3329001106A2 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBAC35BF185E3329001106A2 /* IndexViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EBAC35411853AB49001106A2 /* iDieta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDieta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAC35441853AB49001106A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBAC35461853AB49001106A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +55,15 @@
 		EBAC35651853AB49001106A2 /* iDietaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDietaTests-Info.plist"; sourceTree = "<group>"; };
 		EBAC35671853AB49001106A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBAC35691853AB49001106A2 /* iDietaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDietaTests.m; sourceTree = "<group>"; };
+		EBAC35B4185E22C6001106A2 /* DietaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaModel.h; sourceTree = "<group>"; };
+		EBAC35B5185E22C6001106A2 /* DietaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaModel.m; sourceTree = "<group>"; };
+		EBAC35B7185E2D04001106A2 /* Alimento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento.h; sourceTree = "<group>"; };
+		EBAC35B8185E2D04001106A2 /* Alimento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento.m; sourceTree = "<group>"; };
+		EBAC35BA185E2D0F001106A2 /* Dieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dieta.h; sourceTree = "<group>"; };
+		EBAC35BB185E2D0F001106A2 /* Dieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dieta.m; sourceTree = "<group>"; };
+		EBAC35BD185E3329001106A2 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		EBAC35BE185E3329001106A2 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		EBAC35BF185E3329001106A2 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			files = (
 				EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */,
 				EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */,
+				EB73C22C185E3FBD00671E19 /* libsqlite3.dylib in Frameworks */,
 				EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +113,7 @@
 		EBAC35431853AB49001106A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */,
 				EBAC35441853AB49001106A2 /* Foundation.framework */,
 				EBAC35461853AB49001106A2 /* CoreGraphics.framework */,
 				EBAC35481853AB49001106A2 /* UIKit.framework */,
@@ -107,6 +125,9 @@
 		EBAC354A1853AB49001106A2 /* iDieta */ = {
 			isa = PBXGroup;
 			children = (
+				EBAC35B3185E2284001106A2 /* Controller */,
+				EBAC35B2185E2280001106A2 /* View */,
+				EBAC35B1185E227B001106A2 /* Model */,
 				EBAC35531853AB49001106A2 /* AppDelegate.h */,
 				EBAC35541853AB49001106A2 /* AppDelegate.m */,
 				EBAC35561853AB49001106A2 /* Images.xcassets */,
@@ -142,6 +163,36 @@
 				EBAC35661853AB49001106A2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBAC35B1185E227B001106A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC35B4185E22C6001106A2 /* DietaModel.h */,
+				EBAC35B5185E22C6001106A2 /* DietaModel.m */,
+				EBAC35B7185E2D04001106A2 /* Alimento.h */,
+				EBAC35B8185E2D04001106A2 /* Alimento.m */,
+				EBAC35BA185E2D0F001106A2 /* Dieta.h */,
+				EBAC35BB185E2D0F001106A2 /* Dieta.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBAC35B2185E2280001106A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC35BF185E3329001106A2 /* IndexViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EBAC35B3185E2284001106A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC35BD185E3329001106A2 /* IndexViewController.h */,
+				EBAC35BE185E3329001106A2 /* IndexViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAC35C1185E3329001106A2 /* IndexViewController.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
 			);
@@ -239,8 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAC35BC185E2D0F001106A2 /* Dieta.m in Sources */,
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
+				EBAC35B6185E22C6001106A2 /* DietaModel.m in Sources */,
+				EBAC35B9185E2D04001106A2 /* Alimento.m in Sources */,
 				EBAC35511853AB49001106A2 /* main.m in Sources */,
+				EBAC35C0185E3329001106A2 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +497,7 @@
 				EBAC356F1853AB49001106A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBAC35701853AB49001106A2 /* Build configuration list for PBXNativeTarget "iDietaTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +506,7 @@
 				EBAC35721853AB49001106A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
