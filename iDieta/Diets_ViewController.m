@@ -35,7 +35,6 @@
 
 - (IBAction)novaView:(id)sender
 {
-    NSLog(@"foi");
     NewDietViewController *newView=[[NewDietViewController alloc]init];
     [self.navigationController pushViewController:newView animated:YES];
 
@@ -43,7 +42,6 @@
 
 - (IBAction)configView:(id)sender
 {
-    NSLog(@"foi");
     ConfigViewController *conf = [[ConfigViewController alloc]init];
     [self.navigationController pushViewController:conf animated:YES];
 }

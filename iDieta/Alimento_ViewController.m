@@ -12,6 +12,7 @@
 
 @interface Alimento_ViewController (){
     int idDiet;
+    NSMutableArray *alimentos;
 }
 
 @end
@@ -40,6 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DietaModel *sharedModel = [DietaModel sharedModel];
+    alimentos = [sharedModel getAlimentosFromDieta:idDiet];
     // Do any additional setup after loading the view from its nib.
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
