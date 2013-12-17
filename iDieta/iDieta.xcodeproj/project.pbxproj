@@ -7,7 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB73C22C185E3FBD00671E19 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */; };
+		5F3AED79185E492C006E3A66 /* Start_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED77185E492C006E3A66 /* Start_ViewController.m */; };
+		5F3AED7A185E492C006E3A66 /* Start_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED78185E492C006E3A66 /* Start_ViewController.xib */; };
+		5F3AED7E185E4C3D006E3A66 /* Diet_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED7C185E4C3D006E3A66 /* Diet_ViewController.m */; };
+		5F3AED7F185E4C3D006E3A66 /* Diet_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED7D185E4C3D006E3A66 /* Diet_ViewController.xib */; };
+		5F3AED82185E4CFE006E3A66 /* Diets_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED81185E4CFE006E3A66 /* Diets_Cell.m */; };
+		5F3AED85185E4D17006E3A66 /* Diet_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED84185E4D17006E3A66 /* Diet_Cell.m */; };
+		5F3AED87185E4D3F006E3A66 /* Diets_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED86185E4D3F006E3A66 /* Diets_Cell.xib */; };
+		5F3AED89185E4D4B006E3A66 /* Diet_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED88185E4D4B006E3A66 /* Diet_Cell.xib */; };
+		5F3AED8D185E4E6C006E3A66 /* Schedule_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED8B185E4E6C006E3A66 /* Schedule_ViewController.m */; };
+		5F3AED8E185E4E6C006E3A66 /* Schedule_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED8C185E4E6C006E3A66 /* Schedule_ViewController.xib */; };
+		5F3AED92185E4E7A006E3A66 /* Lunchbox_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED90185E4E7A006E3A66 /* Lunchbox_ViewController.m */; };
+		5F3AED93185E4E7A006E3A66 /* Lunchbox_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED91185E4E7A006E3A66 /* Lunchbox_ViewController.xib */; };
+		5F3AED96185E4E97006E3A66 /* Schedule_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED95185E4E97006E3A66 /* Schedule_Cell.m */; };
+		5F3AED99185E4EAA006E3A66 /* Lunchbox_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED98185E4EAA006E3A66 /* Lunchbox_Cell.m */; };
+		5F3AED9B185E4ECD006E3A66 /* Lunchbox_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED9A185E4ECD006E3A66 /* Lunchbox_Cell.xib */; };
+		5F3AED9D185E4EE4006E3A66 /* Schedule_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AED9C185E4EE4006E3A66 /* Schedule_Cell.xib */; };
+		5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AED9F185E5A75006E3A66 /* Meal.m */; };
+		5F3AEDA3185E5A84006E3A66 /* Diet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA2185E5A84006E3A66 /* Diet.m */; };
+		5F3AEDA9185E6007006E3A66 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDA8185E6007006E3A66 /* Item.m */; };
+		5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */; };
+		5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */; };
+		DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */; };
+		DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */; };
 		EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35441853AB49001106A2 /* Foundation.framework */; };
 		EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35461853AB49001106A2 /* CoreGraphics.framework */; };
 		EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
@@ -20,11 +42,6 @@
 		EBAC35601853AB49001106A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAC35481853AB49001106A2 /* UIKit.framework */; };
 		EBAC35681853AB49001106A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBAC35661853AB49001106A2 /* InfoPlist.strings */; };
 		EBAC356A1853AB49001106A2 /* iDietaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35691853AB49001106A2 /* iDietaTests.m */; };
-		EBAC35B6185E22C6001106A2 /* DietaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35B5185E22C6001106A2 /* DietaModel.m */; };
-		EBAC35B9185E2D04001106A2 /* Alimento.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35B8185E2D04001106A2 /* Alimento.m */; };
-		EBAC35BC185E2D0F001106A2 /* Dieta.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35BB185E2D0F001106A2 /* Dieta.m */; };
-		EBAC35C0185E3329001106A2 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAC35BE185E3329001106A2 /* IndexViewController.m */; };
-		EBAC35C1185E3329001106A2 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBAC35BF185E3329001106A2 /* IndexViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +55,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5F3AED76185E492C006E3A66 /* Start_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Start_ViewController.h; sourceTree = "<group>"; };
+		5F3AED77185E492C006E3A66 /* Start_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Start_ViewController.m; sourceTree = "<group>"; };
+		5F3AED78185E492C006E3A66 /* Start_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Start_ViewController.xib; sourceTree = "<group>"; };
+		5F3AED7B185E4C3D006E3A66 /* Diet_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet_ViewController.h; sourceTree = "<group>"; };
+		5F3AED7C185E4C3D006E3A66 /* Diet_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet_ViewController.m; sourceTree = "<group>"; };
+		5F3AED7D185E4C3D006E3A66 /* Diet_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diet_ViewController.xib; sourceTree = "<group>"; };
+		5F3AED80185E4CFE006E3A66 /* Diets_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_Cell.h; sourceTree = "<group>"; };
+		5F3AED81185E4CFE006E3A66 /* Diets_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_Cell.m; sourceTree = "<group>"; };
+		5F3AED83185E4D17006E3A66 /* Diet_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet_Cell.h; sourceTree = "<group>"; };
+		5F3AED84185E4D17006E3A66 /* Diet_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet_Cell.m; sourceTree = "<group>"; };
+		5F3AED86185E4D3F006E3A66 /* Diets_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_Cell.xib; sourceTree = "<group>"; };
+		5F3AED88185E4D4B006E3A66 /* Diet_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diet_Cell.xib; sourceTree = "<group>"; };
+		5F3AED8A185E4E6C006E3A66 /* Schedule_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule_ViewController.h; sourceTree = "<group>"; };
+		5F3AED8B185E4E6C006E3A66 /* Schedule_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule_ViewController.m; sourceTree = "<group>"; };
+		5F3AED8C185E4E6C006E3A66 /* Schedule_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Schedule_ViewController.xib; sourceTree = "<group>"; };
+		5F3AED8F185E4E7A006E3A66 /* Lunchbox_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lunchbox_ViewController.h; sourceTree = "<group>"; };
+		5F3AED90185E4E7A006E3A66 /* Lunchbox_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lunchbox_ViewController.m; sourceTree = "<group>"; };
+		5F3AED91185E4E7A006E3A66 /* Lunchbox_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lunchbox_ViewController.xib; sourceTree = "<group>"; };
+		5F3AED94185E4E97006E3A66 /* Schedule_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule_Cell.h; sourceTree = "<group>"; };
+		5F3AED95185E4E97006E3A66 /* Schedule_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule_Cell.m; sourceTree = "<group>"; };
+		5F3AED97185E4EAA006E3A66 /* Lunchbox_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lunchbox_Cell.h; sourceTree = "<group>"; };
+		5F3AED98185E4EAA006E3A66 /* Lunchbox_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lunchbox_Cell.m; sourceTree = "<group>"; };
+		5F3AED9A185E4ECD006E3A66 /* Lunchbox_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Lunchbox_Cell.xib; sourceTree = "<group>"; };
+		5F3AED9C185E4EE4006E3A66 /* Schedule_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Schedule_Cell.xib; sourceTree = "<group>"; };
+		5F3AED9E185E5A75006E3A66 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		5F3AED9F185E5A75006E3A66 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		5F3AEDA1185E5A84006E3A66 /* Diet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet.h; sourceTree = "<group>"; };
+		5F3AEDA2185E5A84006E3A66 /* Diet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet.m; sourceTree = "<group>"; };
+		5F3AEDA7185E6007006E3A66 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5F3AEDA8185E6007006E3A66 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5F3AEDAC185FB83A006E3A66 /* Diets_HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_HeaderViewController.h; sourceTree = "<group>"; };
+		5F3AEDAD185FB83A006E3A66 /* Diets_HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_HeaderViewController.m; sourceTree = "<group>"; };
+		5F3AEDAE185FB83A006E3A66 /* Diets_HeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_HeaderViewController.xib; sourceTree = "<group>"; };
+		DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_ViewController.h; sourceTree = "<group>"; };
+		DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_ViewController.m; sourceTree = "<group>"; };
+		DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_ViewController.xib; sourceTree = "<group>"; };
 		EBAC35411853AB49001106A2 /* iDieta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDieta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAC35441853AB49001106A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBAC35461853AB49001106A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,15 +107,6 @@
 		EBAC35651853AB49001106A2 /* iDietaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDietaTests-Info.plist"; sourceTree = "<group>"; };
 		EBAC35671853AB49001106A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBAC35691853AB49001106A2 /* iDietaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDietaTests.m; sourceTree = "<group>"; };
-		EBAC35B4185E22C6001106A2 /* DietaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietaModel.h; sourceTree = "<group>"; };
-		EBAC35B5185E22C6001106A2 /* DietaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietaModel.m; sourceTree = "<group>"; };
-		EBAC35B7185E2D04001106A2 /* Alimento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento.h; sourceTree = "<group>"; };
-		EBAC35B8185E2D04001106A2 /* Alimento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento.m; sourceTree = "<group>"; };
-		EBAC35BA185E2D0F001106A2 /* Dieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dieta.h; sourceTree = "<group>"; };
-		EBAC35BB185E2D0F001106A2 /* Dieta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dieta.m; sourceTree = "<group>"; };
-		EBAC35BD185E3329001106A2 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
-		EBAC35BE185E3329001106A2 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		EBAC35BF185E3329001106A2 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +116,6 @@
 			files = (
 				EBAC35471853AB49001106A2 /* CoreGraphics.framework in Frameworks */,
 				EBAC35491853AB49001106A2 /* UIKit.framework in Frameworks */,
-				EB73C22C185E3FBD00671E19 /* libsqlite3.dylib in Frameworks */,
 				EBAC35451853AB49001106A2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +215,6 @@
 		EBAC35431853AB49001106A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB73C22B185E3FBD00671E19 /* libsqlite3.dylib */,
 				EBAC35441853AB49001106A2 /* Foundation.framework */,
 				EBAC35461853AB49001106A2 /* CoreGraphics.framework */,
 				EBAC35481853AB49001106A2 /* UIKit.framework */,
@@ -185,9 +226,6 @@
 		EBAC354A1853AB49001106A2 /* iDieta */ = {
 			isa = PBXGroup;
 			children = (
-				EBAC35B3185E2284001106A2 /* Controller */,
-				EBAC35B2185E2280001106A2 /* View */,
-				EBAC35B1185E227B001106A2 /* Model */,
 				EBAC35531853AB49001106A2 /* AppDelegate.h */,
 				EBAC35541853AB49001106A2 /* AppDelegate.m */,
 				EBAC35561853AB49001106A2 /* Images.xcassets */,
@@ -223,36 +261,6 @@
 				EBAC35661853AB49001106A2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBAC35B1185E227B001106A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EBAC35B4185E22C6001106A2 /* DietaModel.h */,
-				EBAC35B5185E22C6001106A2 /* DietaModel.m */,
-				EBAC35B7185E2D04001106A2 /* Alimento.h */,
-				EBAC35B8185E2D04001106A2 /* Alimento.m */,
-				EBAC35BA185E2D0F001106A2 /* Dieta.h */,
-				EBAC35BB185E2D0F001106A2 /* Dieta.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		EBAC35B2185E2280001106A2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EBAC35BF185E3329001106A2 /* IndexViewController.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		EBAC35B3185E2284001106A2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EBAC35BD185E3329001106A2 /* IndexViewController.h */,
-				EBAC35BE185E3329001106A2 /* IndexViewController.m */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAC35C1185E3329001106A2 /* IndexViewController.xib in Resources */,
+				DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */,
+				5F3AED9B185E4ECD006E3A66 /* Lunchbox_Cell.xib in Resources */,
+				5F3AED89185E4D4B006E3A66 /* Diet_Cell.xib in Resources */,
+				5F3AEDB0185FB83A006E3A66 /* Diets_HeaderViewController.xib in Resources */,
+				5F3AED7A185E492C006E3A66 /* Start_ViewController.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
 				5F3AED7F185E4C3D006E3A66 /* Diet_ViewController.xib in Resources */,
@@ -356,12 +368,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAC35BC185E2D0F001106A2 /* Dieta.m in Sources */,
+				5F3AEDA3185E5A84006E3A66 /* Diet.m in Sources */,
+				5F3AED79185E492C006E3A66 /* Start_ViewController.m in Sources */,
+				5F3AED92185E4E7A006E3A66 /* Lunchbox_ViewController.m in Sources */,
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
-				EBAC35B6185E22C6001106A2 /* DietaModel.m in Sources */,
-				EBAC35B9185E2D04001106A2 /* Alimento.m in Sources */,
+				5F3AEDAF185FB83A006E3A66 /* Diets_HeaderViewController.m in Sources */,
+				5F3AEDA0185E5A75006E3A66 /* Meal.m in Sources */,
+				5F3AED82185E4CFE006E3A66 /* Diets_Cell.m in Sources */,
+				5F3AED99185E4EAA006E3A66 /* Lunchbox_Cell.m in Sources */,
+				5F3AED7E185E4C3D006E3A66 /* Diet_ViewController.m in Sources */,
+				5F3AED96185E4E97006E3A66 /* Schedule_Cell.m in Sources */,
 				EBAC35511853AB49001106A2 /* main.m in Sources */,
-				EBAC35C0185E3329001106A2 /* IndexViewController.m in Sources */,
+				5F3AED85185E4D17006E3A66 /* Diet_Cell.m in Sources */,
+				DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */,
+				5F3AEDA9185E6007006E3A66 /* Item.m in Sources */,
+				5F3AED8D185E4E6C006E3A66 /* Schedule_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

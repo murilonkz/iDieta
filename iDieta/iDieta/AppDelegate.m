@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "IndexViewController.h"
+#import "Start_ViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,12 +16,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //testegugyugyu
-    
+    /*
     IndexViewController *ivc = [[IndexViewController alloc]init];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:ivc];
     
 
     self.window.rootViewController = navigationController;
+    */
+    
+    //Comments
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[Start_ViewController alloc] initWithNibName:@"Start_ViewController" bundle:nil]];
+    [[self window]setRootViewController:navigationController];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:0.5f green:0.5f blue:0.7f alpha:1.0f]];
     
     
     self.window.backgroundColor = [UIColor whiteColor];
