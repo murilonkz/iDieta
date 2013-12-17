@@ -13,6 +13,7 @@
 @end
 
 @implementation Alimento_ViewController
+@synthesize txtAlimento,txtCalorias,datePicker,btnSalvar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,52 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+- (IBAction)ClickSalvar:(id)sender {
+    NSString *alimento;
+    double cal;
+    
+    alimento=txtAlimento.text;
+    cal=[txtCalorias.text doubleValue];
+    
+    txtAlimento.text=@"";
+    txtCalorias.text=@"";
+    
+    [btnSalvar setEnabled:NO];
+    
+        //RECORD THE NEW DIET TO DB
+    
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Alimento adicionado"
+                              message:alimento
+                              delegate:self
+                              cancelButtonTitle:nil
+                              otherButtonTitles:@"OK", nil];
+    
+    alertView.alertViewStyle = UIAlertViewStyleDefault;
+    [alertView show];
+    
+    
+}
+
+
+
+- (IBAction)ChangedItem:(id)sender {
+    if (!(([txtAlimento.text isEqual:@""])||([txtCalorias.text isEqual:@""])))
+        {[btnSalvar setEnabled:YES];}
+    else{
+        {[btnSalvar setEnabled:NO];}
+    };
+}
+- (IBAction)ChangedCal:(id)sender {
+    if (!(([txtAlimento.text isEqual:@""])||([txtCalorias.text isEqual:@""])))
+        {[btnSalvar setEnabled:YES];}
+    else{
+        {[btnSalvar setEnabled:NO];}
+    };
 }
 
 @end
