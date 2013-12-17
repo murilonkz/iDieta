@@ -8,6 +8,7 @@
 
 #import "Diets_ViewController.h"
 #import "DietaModel.h"
+#import "ConfigViewController.h"
 @interface Diets_ViewController ()
 
 @end
@@ -19,19 +20,36 @@
     self = [super initWithStyle:style];
     
     if (self) {
-    
         
     }
     return self;
 }
 
+- (IBAction)novaView:(id)sender
+{
+    NSLog(@"foi");
+//    ThirdViewController *third = [[ThirdViewController alloc]init];
+//    [self.navigationController pushViewController:third animated:YES];
+}
+
+- (IBAction)configView:(id)sender
+{
+    NSLog(@"foi");
+    ConfigViewController *conf = [[ConfigViewController alloc]init];
+    [self.navigationController pushViewController:conf animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"asdsa");
+    [self setTitle:@"Dietas"];
+    
+    UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithTitle:@"Nova" style:UIBarButtonItemStylePlain target:self action:@selector(novaView:)];
+    [self.navigationItem setRightBarButtonItem:next];
+    
+    UIBarButtonItem *last = [[UIBarButtonItem alloc] initWithTitle:@"Config" style:UIBarButtonItemStylePlain target:self action:@selector(configView:)];
+    [self.navigationItem setLeftBarButtonItem:last];
     DietaModel *sharedModel = [DietaModel sharedModel];
-    
-    
     _dietas = [sharedModel getAllDietas];
         // Uncomment the following line to preserve selection between presentations.
         // self.clearsSelectionOnViewWillAppear = NO;
@@ -50,7 +68,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
         // Return the number of sections.
     return 1;
 }
@@ -115,7 +132,7 @@
  }
  */
 
-/*
+
  #pragma mark - Table view delegate
  
  // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
@@ -123,14 +140,13 @@
  {
  // Navigation logic may go here, for example:
  // Create the next view controller.
- <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+ //DetailViewController *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
  
  // Pass the selected object to the new view controller.
  
  // Push the view controller.
- [self.navigationController pushViewController:detailViewController animated:YES];
+ // [self.navigationController pushViewController:detailViewController animated:YES];
  }
- 
- */
+
 
 @end
