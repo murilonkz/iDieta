@@ -28,5 +28,6 @@
 - (NSMutableArray*)getAlimentosFromDieta: (int)idDieta;
 
 - (void) limparBd;
+- (BOOL) existsDiets;
 
 @end

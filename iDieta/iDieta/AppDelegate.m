@@ -28,9 +28,13 @@
     //Comments
     DietaModel *sharedModel = [DietaModel sharedModel];
     // Limpa todas as tabelas do BD
-    [sharedModel limparBd];
+    //                 [sharedModel limparBd];
     
-    // Adiciona duas novas dietas
+    
+    
+    
+    //CASO O BANCO AINDA NÃOA TENHA SIDO CRIADO Adiciona duas dietas modelos
+    if(YES){
     Dieta *dieta = [[Dieta alloc]init];
     [dieta setNome:@"Dieta1"];
     [dieta setCaloriasDiarias:1500];
@@ -63,6 +67,8 @@
     NSMutableArray *alimentosDieta = [[NSMutableArray alloc]initWithObjects:alimento, alimento2, alimento3, nil];
     
     [sharedModel addAlimentos:alimentosDieta naDietaId: 0];
+    }
+    
     
     UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:[[Diets_ViewController alloc] initWithNibName:@"Diets_ViewController" bundle:nil]];
     [[self window]setRootViewController:navigationController];

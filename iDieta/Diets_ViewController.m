@@ -8,8 +8,16 @@
 
 #import "Diets_ViewController.h"
 #import "DietaModel.h"
+#import "Diets_Cell.h"
 #import "ConfigViewController.h"
+#import "NewDietViewController.h"
+#import "Diet_ViewController.h"
+
+
 @interface Diets_ViewController ()
+{
+    Diet_ViewController    *dietView;
+}
 
 @end
 
@@ -21,6 +29,9 @@
     
     if (self) {
         
+        UINib *cel = [UINib nibWithNibName:@"Diets_Cell" bundle:nil];
+        [self.tableView registerNib:cel forCellReuseIdentifier:@"Diets_Cell"];
+        
     }
     return self;
 }
@@ -28,6 +39,8 @@
 - (IBAction)novaView:(id)sender
 {
     NSLog(@"foi");
+    NewDietViewController *newView=[[NewDietViewController alloc]init];
+    [self.navigationController pushViewController:newView animated:YES];
 //    ThirdViewController *third = [[ThirdViewController alloc]init];
 //    [self.navigationController pushViewController:third animated:YES];
 }
@@ -92,6 +105,39 @@
     
     return cell;
 }
+
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *CellIdentifier = @"Diets_Cell";
+//    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+////    if (cell == nil) {
+////        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+////    }
+//    
+//        // Configure the cell...
+//        [[cell textLabel]setText:[[_dietas objectAtIndex:[indexPath row]]nome]];
+//        //[cell setCellPk:[indexPath row] Name:[[_dietas objectAtIndex:[indexPath row]]nome] isEnabled:YES NavCntrl:self.navigationController];
+//    return cell;
+//}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *CellIdentifier = @"Diets_Cell";
+//    
+//    Diets_Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    [cell setPk:[indexPath row]];
+//    [cell setCellPk:[indexPath row] Name:[NSString stringWithFormat:@"Dieta numero %d",arc4random()%50] isEnabled:arc4random()%2 NavCntrl:self.navigationController];
+//    
+//    return cell;
+//}
+
+
+
+
+
+
+
 
 /*
  // Override to support conditional editing of the table view.

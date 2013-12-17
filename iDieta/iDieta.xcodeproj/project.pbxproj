@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3AEDB91860C309006E3A66 /* NewDietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDB71860C309006E3A66 /* NewDietViewController.m */; };
+		5F3AEDBA1860C309006E3A66 /* NewDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDB81860C309006E3A66 /* NewDietViewController.xib */; };
+		5F3AEDBE1860CFC3006E3A66 /* Diet_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDBC1860CFC3006E3A66 /* Diet_ViewController.m */; };
+		5F3AEDBF1860CFC3006E3A66 /* Diet_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDBD1860CFC3006E3A66 /* Diet_ViewController.xib */; };
+		5F3AEDC41860D11C006E3A66 /* Diet_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3AEDC31860D11C006E3A66 /* Diet_Cell.xib */; };
+		5F3AEDC71860D12A006E3A66 /* Diet_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AEDC61860D12A006E3A66 /* Diet_Cell.m */; };
+		5FC4A0AB1860D7FD00603DF3 /* Diets_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC4A0A91860D7FD00603DF3 /* Diets_Cell.m */; };
+		5FC4A0AC1860D7FD00603DF3 /* Diets_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC4A0AA1860D7FD00603DF3 /* Diets_Cell.xib */; };
+		5FC4A0B01860DE6800603DF3 /* Alimento_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC4A0AE1860DE6800603DF3 /* Alimento_ViewController.m */; };
+		5FC4A0B11860DE6800603DF3 /* Alimento_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC4A0AF1860DE6800603DF3 /* Alimento_ViewController.xib */; };
 		DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */; };
 		DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */; };
 		DBBE8C1718600B00007436AB /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBE8C1518600B00007436AB /* ConfigViewController.m */; };
@@ -40,6 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F3AEDB61860C309006E3A66 /* NewDietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDietViewController.h; sourceTree = "<group>"; };
+		5F3AEDB71860C309006E3A66 /* NewDietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDietViewController.m; sourceTree = "<group>"; };
+		5F3AEDB81860C309006E3A66 /* NewDietViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewDietViewController.xib; sourceTree = "<group>"; };
+		5F3AEDBB1860CFC3006E3A66 /* Diet_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet_ViewController.h; sourceTree = "<group>"; };
+		5F3AEDBC1860CFC3006E3A66 /* Diet_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet_ViewController.m; sourceTree = "<group>"; };
+		5F3AEDBD1860CFC3006E3A66 /* Diet_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diet_ViewController.xib; sourceTree = "<group>"; };
+		5F3AEDC31860D11C006E3A66 /* Diet_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diet_Cell.xib; sourceTree = "<group>"; };
+		5F3AEDC51860D12A006E3A66 /* Diet_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diet_Cell.h; sourceTree = "<group>"; };
+		5F3AEDC61860D12A006E3A66 /* Diet_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diet_Cell.m; sourceTree = "<group>"; };
+		5FC4A0A81860D7FD00603DF3 /* Diets_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_Cell.h; sourceTree = "<group>"; };
+		5FC4A0A91860D7FD00603DF3 /* Diets_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_Cell.m; sourceTree = "<group>"; };
+		5FC4A0AA1860D7FD00603DF3 /* Diets_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_Cell.xib; sourceTree = "<group>"; };
+		5FC4A0AD1860DE6800603DF3 /* Alimento_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento_ViewController.h; sourceTree = "<group>"; };
+		5FC4A0AE1860DE6800603DF3 /* Alimento_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento_ViewController.m; sourceTree = "<group>"; };
+		5FC4A0AF1860DE6800603DF3 /* Alimento_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Alimento_ViewController.xib; sourceTree = "<group>"; };
 		DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diets_ViewController.h; sourceTree = "<group>"; };
 		DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diets_ViewController.m; sourceTree = "<group>"; };
 		DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Diets_ViewController.xib; sourceTree = "<group>"; };
@@ -101,8 +126,18 @@
 			children = (
 				DB1FF27D185E9B1400C34005 /* Diets_ViewController.h */,
 				DB1FF27E185E9B1400C34005 /* Diets_ViewController.m */,
+				5FC4A0A81860D7FD00603DF3 /* Diets_Cell.h */,
+				5FC4A0A91860D7FD00603DF3 /* Diets_Cell.m */,
 				DBBE8C1418600B00007436AB /* ConfigViewController.h */,
 				DBBE8C1518600B00007436AB /* ConfigViewController.m */,
+				5F3AEDB61860C309006E3A66 /* NewDietViewController.h */,
+				5F3AEDB71860C309006E3A66 /* NewDietViewController.m */,
+				5F3AEDBB1860CFC3006E3A66 /* Diet_ViewController.h */,
+				5F3AEDBC1860CFC3006E3A66 /* Diet_ViewController.m */,
+				5F3AEDC51860D12A006E3A66 /* Diet_Cell.h */,
+				5F3AEDC61860D12A006E3A66 /* Diet_Cell.m */,
+				5FC4A0AD1860DE6800603DF3 /* Alimento_ViewController.h */,
+				5FC4A0AE1860DE6800603DF3 /* Alimento_ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -111,7 +146,12 @@
 			isa = PBXGroup;
 			children = (
 				DB1FF27F185E9B1400C34005 /* Diets_ViewController.xib */,
+				5FC4A0AA1860D7FD00603DF3 /* Diets_Cell.xib */,
 				DBBE8C1618600B00007436AB /* ConfigViewController.xib */,
+				5F3AEDB81860C309006E3A66 /* NewDietViewController.xib */,
+				5F3AEDBD1860CFC3006E3A66 /* Diet_ViewController.xib */,
+				5F3AEDC31860D11C006E3A66 /* Diet_Cell.xib */,
+				5FC4A0AF1860DE6800603DF3 /* Alimento_ViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -279,9 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1FF281185E9B1400C34005 /* Diets_ViewController.xib in Resources */,
+				5FC4A0B11860DE6800603DF3 /* Alimento_ViewController.xib in Resources */,
+				5F3AEDC41860D11C006E3A66 /* Diet_Cell.xib in Resources */,
 				EBAC354F1853AB49001106A2 /* InfoPlist.strings in Resources */,
+				5F3AEDBF1860CFC3006E3A66 /* Diet_ViewController.xib in Resources */,
+				5F3AEDBA1860C309006E3A66 /* NewDietViewController.xib in Resources */,
 				DBBE8C1818600B00007436AB /* ConfigViewController.xib in Resources */,
 				EBAC35571853AB49001106A2 /* Images.xcassets in Resources */,
+				5FC4A0AC1860D7FD00603DF3 /* Diets_Cell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBAC35551853AB49001106A2 /* AppDelegate.m in Sources */,
+				5F3AEDC71860D12A006E3A66 /* Diet_Cell.m in Sources */,
+				5F3AEDB91860C309006E3A66 /* NewDietViewController.m in Sources */,
+				5FC4A0B01860DE6800603DF3 /* Alimento_ViewController.m in Sources */,
 				EBBEB432185FF53000DD510F /* Dieta.m in Sources */,
 				EBAC35511853AB49001106A2 /* main.m in Sources */,
+				5FC4A0AB1860D7FD00603DF3 /* Diets_Cell.m in Sources */,
+				5F3AEDBE1860CFC3006E3A66 /* Diet_ViewController.m in Sources */,
 				EBBEB433185FF53000DD510F /* DietaModel.m in Sources */,
 				DB1FF280185E9B1400C34005 /* Diets_ViewController.m in Sources */,
 				DBBE8C1718600B00007436AB /* ConfigViewController.m in Sources */,

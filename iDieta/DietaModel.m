@@ -124,7 +124,7 @@
                 [dieta setCaloriasDiarias:calorias_diarias];
                 
                 [dietas addObject:dieta];
-
+                
             }
             sqlite3_finalize(statement);
         }
@@ -308,6 +308,45 @@
 
     
 }
+
+
+-(BOOL) existsDiets
+{
+    const char *dbpath = [_databasePath UTF8String];
+    sqlite3_stmt *statement;
+    BOOL tblOk;
+    
+    tblOk=NO;
+    
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+        const char *query_stmt = [@"SELECT COUNT(*) FROM dietas;" UTF8String];
+        if (sqlite3_prepare_v2(_DB, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            tblOk=sqlite3_column_int(statement, 0);
+                //            while (sqlite3_step(statement) == SQLITE_ROW) {
+                //
+                //                int idDieta = sqlite3_column_int(statement, 0);
+                //                NSString *nome = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                //                float calorias_diarias = sqlite3_column_double(statement, 2);
+                //
+                //                Dieta *dieta = [[Dieta alloc]init];
+                //                [dieta setIdDieta: idDieta];
+                //                [dieta setNome: nome];
+                //                [dieta setCaloriasDiarias:calorias_diarias];
+                //
+                //                [dietas addObject:dieta];
+                //                
+                //            }
+                //            sqlite3_finalize(statement);
+        }
+        sqlite3_close(_DB);
+    }
+    
+    return tblOk;
+}
+
+
+
 
 
 @end
